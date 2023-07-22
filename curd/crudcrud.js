@@ -61,7 +61,15 @@ function saveToLocalStorage(event) {
     EditButton.value = "Edit";
     EditButton.onclick = () => {
       // localStorage.removeItem(obj.Email);
-      
+      axios
+      .delete(
+        `https://crudcrud.com/api/1f471821646e4c24b85e299abfc00c8e/appointment/${obj._id}`
+      )
+      .then((res) => {
+        // console.log(res);
+      })
+      .catch((err) => console.log(err));
+    
       parentElement.removeChild(childElement);
       document.getElementById("id-name").value = obj.Name;
       document.getElementById("id-email").value = obj.Email;
