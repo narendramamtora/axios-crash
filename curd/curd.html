@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>              
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Crudcrud First post</title>
-  </head>
+    <title>CURD CURD GET</title>
+     </head>
   <body>
-    
     <section class="container">
-      
-      <form id="my-form" onsubmit="callvalue()">
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name">
-          <label for="email">EmailID</label>
-          <input type="email" id="email">
-          <label for="number">Number:</label>
-          <input type="number" id="mnumber">
-
-        <input class="btn" type="submit" value="Submit">  
-        </div>
-      
+      <form id="my-form" onsubmit="saveToLocalStorage(event)">
+        <div class="msg">
+        
+          <label for="id-name">Name:</label>
+          <input type="text" id="id-name" name="username" />
+        
+        
+          <label for="id-email">Email:</label>
+          <input type="email" id="id-email" name="email" />
+        
+        
+            <label for="id-number">Number:</label>
+            <input type="number" id="id-number" name="number" />
+            <input class="btn" type="submit" value="Submit" />
+          </div>
       </form>
-      
-      
-      <ul id="users"></ul>
+
+      <ul id="listofItems"></ul>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
     <script src="crudcrud.js"></script>
   </body>
-</html>
+</html> 

@@ -26,7 +26,6 @@ axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5',{timeout:5000} )
 
 
 }
-
 // POST REQUEST
 function addTodo() {
   axios
