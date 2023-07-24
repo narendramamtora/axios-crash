@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan&display=swap">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Making waiter Life Easy</title>
+     </head>
+  <body>
+    <section class="container">
+      <form id="my-form" onsubmit="saveToServer(event)">
+        <div class="msg">
+        <div>
+          <label for="chooseprice">Choose Price:</label>
+          <input type="number" id="chooseprice" name="chooseprice" />
+        </div>
+        
+        <div>
+            <label for="choosedish">Choose Dish:</label>
+            <input type="text" id="choosedish" name="choosedish" />
+        
+        </div>
+<div>
+    <label for="choosetable">Choose a table:</label>
+    <select name="choosetable">
+        <option value="table1">Table 1</option>
+        <option value="table2">Table 2</option>
+        <option value="table3">Table 3</option>
+    </select>
+
+</div>
+<div>
+    <input class="btn1" type="submit" value="Add a bill" />
+</div>
+          </div>
+      </form>
+    </section>
+    
+    <h2 class="'title1">Table 1</h2>
+    <ul id="table1" class= "table">
+
+
+    </ul>
+
+    <h2 class="'title2">Table 2</h2>
+    <ul id="table2" class="table" >
+
+        
+    </ul>
+
+    <h2 class="'title3">Table 3</h2>
+    <ul id="table3" class= "table">
+
+        
+    </ul>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+    <script src="waiterlife.js"></script>
+  </body>
+</html> 
